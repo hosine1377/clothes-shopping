@@ -1,0 +1,58 @@
+.feature__continer__img img {
+  padding: 0.5rem;
+}
+
+.feature__item__description {
+  text-align: center;
+  margin: 1rem 0;
+}
+.stars-icon {
+  font-size: 1rem;
+  color: gold;
+  padding-bottom: 0.5rem;
+}
+.feature__name {
+  color: #3a3833;
+  text-transform: capitalize;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+.feature__price {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1d1d1d;
+  padding-bottom: 0.5rem;
+}
+.feature__btn {
+  border: none;
+  background-color: #ff4905;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 0.6rem 1.3rem;
+  font-weight: 600;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s all;
+  font: inherit;
+}
+.featuer__item:hover .feature__btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+.clothes__item,
+.shoes__item,
+.watch__item,
+.featuer__item {
+  width: 250px;
+  height: 300px;
+  margin-bottom: 12rem;
+}
+.clothes__item img,
+.shoes__item img,
+.watch__item img,
+.featuer__item img {
+  width: 100%;
+  height: 100%;
+}

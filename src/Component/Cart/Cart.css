@@ -1,0 +1,39 @@
+.cart-container.active {
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.cart-container {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  height: 100%;
+  width: 400px;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 1rem 3%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  transition: all 0.5s ease;
+}
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.bag-icon {
+  cursor: pointer;
+}
+.close-icon {
+  cursor: pointer;
+  color: red;
+}
+.add-btn {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0.2rem 0.4rem;
+}

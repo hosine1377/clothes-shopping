@@ -1,0 +1,32 @@
+.section-products-text {
+  text-align: center;
+  padding: 3rem 0;
+}
+.section-products__title {
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.section-products__title::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 48%;
+  background-color: chocolate;
+  /* border: 2px solid black; */
+  width: 40px;
+  height: 5px;
+}
+.section-products-text p {
+  color: #1d1d1d;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.section-products__continer__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  transition: 0.3s ease;
+}

@@ -1,0 +1,7 @@
+.brand-continer {
+  margin: 1rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
