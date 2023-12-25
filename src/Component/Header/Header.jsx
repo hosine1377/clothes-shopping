@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Header.css'
 
 // import components
 import { FaSearch } from 'react-icons/fa'
 import { FaShoppingBag } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import productsContexts from '../../Contexts/ProductsContexts'
 function Header() {
+  const contextData = useContext(productsContexts)
   return (
     <header class="main-header">
       <a class="main-header__continer__logo">
@@ -34,9 +36,12 @@ function Header() {
             </a>
           </li>
           <li class="nav-list">
-            <a href="#">
+            <div
+              href="javascrip:void(0)"
+              onClick={() => contextData.setIsShowCart(true)}
+            >
               <FaShoppingBag />
-            </a>
+            </div>
           </li>
         </ul>
       </nav>
