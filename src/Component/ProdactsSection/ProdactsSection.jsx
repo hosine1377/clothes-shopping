@@ -11,7 +11,7 @@ function ProdactsSection({ product }) {
         <p>here you can check out our new products with fair price on rymo.</p>
       </div>
       <Row className="section-products__continer__img ">
-        {product.infos.splice(0, 4).map((product) => (
+        {product.infos.map((product) => (
           <Product key={product.id} product={product} />
         ))}
       </Row>
